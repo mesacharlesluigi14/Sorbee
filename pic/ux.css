@@ -1,0 +1,887 @@
+.navbar-custom {
+    background-color: #F9AAB4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar-brand img{
+    width: 120px;
+    margin-left: 25px;
+}
+.navbar-nav{
+ align-items: center;
+ 
+}
+.nav-link i {
+  margin-right: 5px; 
+  margin-left: 5px;
+}
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 14px;
+    padding: 0.3em 2.5em;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+@media screen and(min-width: 992px){
+    .navbar-brand img{
+        width: 100px;
+    }
+    .navbar-brand{
+        margin-right: 0;
+    }
+}
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px; 
+  padding-top: 5px; 
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+  .welcome-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: -20px;
+    z-index: 0;
+  }
+  .header-section {
+    position: relative;
+    margin-top: -25px;
+    width: 100%;
+    height: 535px; 
+    background-image: url('pic/promo1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  
+  
+  @media screen and (max-width: 1903px) {
+    .header-section {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .header-section {
+      height: 600px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-section {
+      height: 400px;
+    }
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+
+  .header-button {
+    display: inline-block;
+    padding: 7px 60px;
+    background-color: #FFCA78;
+    color: #FFFFFF;
+    font-family: "Lilita One", sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    margin-top: 225px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .header-button::before {
+    content: "ORDER NOW";
+    display: block;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .header-button:hover {
+    background-color: #FBB65B;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .header-button span {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px rgba(255, 255, 255, 0.5); /* Add drop shadow and inner shadow to the text */
+  }
+  .view-more-section {
+    background-image: url('pic/viewbg.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 1265px;
+    position: relative;
+    z-index: 1;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-text-first {
+    position: absolute;
+    top: 50px; 
+    left: 50px; 
+    color: #fff;
+    font-size: 96px; 
+    font-weight: bold;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 1.0);
+    z-index: 0;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .title-text-second {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #fff;
+    font-size: 96px;
+    font-weight: bold;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 1.0);
+    z-index: 0;
+    margin-top: 100px;
+    font-family: "Lilita One", sans-serif;
+  }
+  .description-text {
+    font-family: "Lilita One", sans-serif;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 1.0);
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 1.5;
+    width: 550px;
+    position: absolute;
+    top: 270px;
+    left: 50px;
+    text-align: justify;
+    text-indent: 125px;
+   
+  }
+
+  @media screen and (max-width: 1255px) {
+    .view-more-section {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .view-more-section {
+      height: 600px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .view-more-section {
+      height: 400px;
+    }
+  }
+  .view-more-section::before {
+    content: "";
+    position: absolute;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254, 163, 24, 0.23);
+    z-index: 0;
+  }
+  .know-more-button {
+    display: inline-block;
+    padding: 7px 60px;
+    background-color: #FFCA78;
+    color: #FFFFFF;
+    font-family: "Lilita One", sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 75px; 
+    left: 175px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .know-more-button::before {
+    content: "KNOW MORE";
+    display: block;
+    position: relative;
+    z-index: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .know-more-button:hover {
+    background-color: #FBB65B;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .know-more-button span {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+                 -2px -2px 4px rgba(255, 255, 255, 0.5);
+  }
+  .divider-container {
+    background-color: #ffffff; 
+  }
+  
+  .divider-image {
+    background-image: url('pic/divider.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 200px;
+    width: 1265px;
+    margin: 0 auto; 
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  @media screen and (max-width: 1255px) {
+    .divider-container {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .divider-container {
+      height: 600px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .divider-container {
+      height: 400px;
+    }
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F9AAB4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .exit-button {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #bb4040;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .exit-button:hover {
+    background-color: #ff6060;
+  }
+  
+
+/* Styles for the footer */
+footer {
+  height: 350px;
+  background: linear-gradient(to bottom, #F9AAB4, #DD7086);
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 1265px;
+  margin: 0 auto; /* Add this line */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px;
+}
+
+.footer-column {
+  color: white;
+}
+
+.store-locations {
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+.contact-info {
+  margin-top: -115px;
+  margin-right: 60px;
+}
+
+.footer-logo {
+  width: 160px;
+  height: 70px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.location-list,
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.location-icon {
+  width: 24px;
+  height: 36px;
+  margin-right: 15px;
+  margin-top: -10px;
+}
+
+.location-details {
+  display: flex;
+  align-items: center;
+}
+
+.location-name,
+.location-hours,
+.contact-list li {
+  font-family: "Lilita One", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  color: #FFBD59;
+  font-family: "Lilita One", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: auto;
+  background-color: #FFBD59;
+}
+
+.location-hours {
+  font-size: 18px;
+  margin-top: 5px;
+  font-family: "Lilita One", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin-top: 5px;
+}
+
+.location-name {
+  font-family: "Lilita One", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: right;
+  font-size: 20px;
+}
+
+.location-list {
+  margin-top: 20px;
+}
+
+.contact-list {
+  list-style-type: disc;
+  margin-top: 20px;
+}
+
+@media (max-width: 1255px) {
+  .store-locations {
+    margin-left: 150px;
+  }
+
+  .contact-info {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .store-locations {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  max-width: 1265px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #FFBD59, #FFD78A);
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.philippine-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+*{
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.container .content {
+  text-align: center;
+  color: #333;
+}
+
+.container .content h3 {
+  margin-top: 30px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container .content h3 span {
+  background: #F9AAB4;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 15px;
+  text-shadow: 2px 2px 4px rgba(82, 4, 40, 0.3);
+}
+
+.container .content h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(255, 225, 91, 0.35);
+}
+
+.container .content h1 span {
+  background: linear-gradient(180deg, #ffad32, #ffcc80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .content p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.container .content .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  background: #333;
+  color: #fff;
+  margin: 0 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.container .content .btn:hover {
+  background: #F9AAB4;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  width: 1265px;
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pic/lgbg.gif") center/contain no-repeat;
+  background-position: center center;
+  background-size: 70vh,  1265px;
+  position: relative;
+}
+.form-container form {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff9ba8, #fcc7ce);
+  border-radius: 5px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.form-container form input {
+
+  transition: outline 0.3s ease;
+}
+
+.form-container form input:focus {
+  outline: 2px solid #FFBD59;
+}
+.form-container form input,
+.form-container form select {
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 8px 0;
+  background: #eee;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  font-weight: 600;
+  color:#8f6268;
+}
+.form-container input::placeholder {
+  opacity: 0.5;
+}
+.form-container form select option {
+  background: #fff;
+}
+
+.form-container form .form-btn {
+  font-family: "Lilita One", sans-serif;
+  background: linear-gradient(90deg, #FFBD59, #FFD595);
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 350px;
+  height: 55px;
+  margin-top: 20px;
+}
+
+.form-container form .form-btn:hover {
+  background: rgb(255, 187, 0);
+  color: #fff;
+}
+
+.form-container form p {
+  font-family: "Lilita One", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.form-container form p a {
+  color: rgb(255, 215, 138);
+}
+
+.form-container form .error-msg {
+  margin: 10px 0;
+  display: block;
+  background: rgb(202, 111, 129);
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+
+
+.reg-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pic/lgbg.gif") center/cover no-repeat;
+}
+
+.reg-form form {
+  width: 400px;
+  height: 625px;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff9ba8, #fcc7ce);
+  border-radius: 5px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.reg-form form input {
+  transition: outline 0.3s ease;
+}
+
+.reg-form form input:focus {
+  outline: 2px solid #FFBD59;
+}
+
+.reg-form form input,
+.reg-form form select {
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 8px 0;
+  background: #eee;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  font-weight: 600;
+  color: #8f6268;
+}
+
+.reg-form input::placeholder {
+  opacity: 0.5;
+}
+
+.reg-form form select option {
+  background: #fff;
+}
+
+.reg-form form .form-btn {
+  font-family: "Lilita One", sans-serif;
+  background: linear-gradient(90deg, #FFBD59, #FFD595);
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 350px;
+  height: 55px;
+  margin-top: 20px;
+}
+
+.reg-form form .form-btn:hover {
+  background: rgb(255, 187, 0);
+  color: #fff;
+}
+
+.reg-form form p {
+  font-family: "Lilita One", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.reg-form form p a {
+  color: rgb(255, 215, 138);
+}
+
+.reg-form form .error-msg {
+  margin: 10px 0;
+  display: block;
+  background: rgb(202, 111, 129);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+.reg-form form select[name="user_type"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.6s ease;
+  font-family: "Roboto", sans-serif;
+  appearance: none;
+  background-image: url("pic/down.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  background-size: 25px;
+
+}
+
+.reg-form form select[name="user_type"]:hover,
+.reg-form form select[name="user_type"]:focus {
+  border-color: #f9f9f9;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+.reg-form form select[name="user_type"] option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  font-family: "Roboto", sans-serif;
+}
+
+.reg-form form select[name="user_type"] option:hover {
+  background-color: #eaeaea;
+  font-family: "Roboto", sans-serif;
+}
+.dbselect {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 250px;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: "Lilita One", sans-serif;
+  color: #F47B8C;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.db1,
+.db2 {
+  display: inline-block;
+  font-family: "Lilita One", sans-serif;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.db1 {
+  background-color: #FFCA78;
+  border-color: #FFCA78;
+  color: #fff;
+}
+
+.db1:hover {
+  background-color: #FFB94A;
+  border-color: #FFB94A;
+}
+
+.db2 {
+  background-color: #F9AAB4;
+  border-color: #F9AAB4;
+  color: #fff;
+}
+
+.db2:hover {
+  background-color: #F47B8C;
+  border-color: #F47B8C;
+}
+
+.fa-users,
+.fa-edit {
+  color: #F47B8C;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.admincon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: -50px;
+}
+
+.admintent h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(255, 225, 91, 0.35);
+  color: #3f3f3f;
+}
+
+.admintent span {
+  background: linear-gradient(180deg, #ffad32, #ffcc80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

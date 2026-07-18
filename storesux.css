@@ -1,0 +1,310 @@
+body {
+    background-color: #F9AAB4;
+  }
+.navbar-custom {
+    background-color: #F9AAB4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+.navbar-brand img{
+    width: 120px;
+    margin-left: 25px;
+}
+.navbar-nav{
+ align-items: center;
+ 
+}
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 14px;
+    padding: 0.5em 2.5em;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+@media screen and(min-width: 992px){
+    .navbar-brand img{
+        width: 100px;
+    }
+    .navbar-brand{
+        margin-right: 0;
+    }
+      
+}
+.map-area {
+  position: relative;
+  width: 100%; /* Change width to 100% */
+  padding-bottom: 56.25%; /* Adjust the aspect ratio here (e.g., 16:9 = 56.25%) */
+  overflow: hidden;
+}
+
+#map-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+  
+  footer {
+    height: 400px;
+    background: linear-gradient(to bottom, #f9aab4 0%, #dd7086 100%);
+  }
+  
+  .footerLoc {
+    width: 100%;
+    padding: 100px 300px 20px;
+    margin: 30px 10px;
+  }
+  
+  .footerLoc ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footerBottom {
+    background: linear-gradient(to bottom, #ffbd59 0%, #ffd78a 100%);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footerBottom p {
+    color: #0e0e0e;
+    font-family: "KOULEN", sans-serif;
+  }
+  
+  .loc {
+    color: #ffbd59;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .RIZAL {
+    color: white;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .ROXAS {
+    color: white;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .EASTWOOD {
+    color: white;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .picture-with-contact {
+    position: relative;
+    width: 100%;
+  }
+  
+  .picture-with-contact img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contact-link {
+    position: absolute;
+    top: 63%;
+    right: 0;
+    padding: 0 230px;
+    text-decoration: none;
+    color: #ffbd59;
+    font-size: 40px;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .num {
+    position: absolute;
+    top: 64%;
+    right: 10%;
+    padding: 60px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .tel {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    padding: 100px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .fb {
+    position: absolute;
+    top: 77%;
+    right: 15%;
+    padding: 50px 1px;
+    text-decoration: none;
+    width: 50px;
+  }
+  
+  .twt {
+    position: absolute;
+    top: 77%;
+    right: 19%;
+    padding: 50px 1px;
+    text-decoration: none;
+    width: 50px;
+  }
+  
+  .inst {
+    position: absolute;
+    top: 77%;
+    right: 11%;
+    padding: 50px 1px;
+    text-decoration: none;
+    width: 50px;
+  }
+  
+  .footerlogo {
+    width: 300px;
+    margin-left: -300px;
+    position: absolute;
+    padding: 100px 50px;
+  }
+  .map-area {
+    position: relative;
+    width: 100%; /* Change width to 100% */
+    padding-bottom: 56.25%; /* Adjust the aspect ratio here (e.g., 16:9 = 56.25%) */
+    overflow: hidden;
+  }
+  .picture-with-contact {
+    position: relative;
+    width: 100%;
+  }
+  
+  .picture-with-contact img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contact-link {
+    position: absolute;
+    top: 102.5%;
+    right: 0;
+    padding: 0px 220px;
+    text-decoration: none;
+    color: #FFBD59;
+    font-size: 40px;
+    font-family: Lilita One;
+   
+  }
+.num{
+    position: absolute;
+    top: 103%;
+    right: 10%;
+    padding: 60px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Lilita One;
+}
+.tel{
+    position: absolute;
+    top: 103%;
+    right: 10%;
+    padding: 100px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Lilita One;
+}
+.fb{
+    position: absolute;
+    top: 115%;
+    right: 15%;
+    padding: 50px 1px;
+    text-decoration: none;
+    width: 50px;
+}
+.twt{
+    position: absolute;
+    top: 115%;
+    right: 19%;
+    padding: 50px 1px;
+    text-decoration: none;
+    width: 50px;
+}
+.inst{
+    position: absolute;
+    top: 115%;
+    right: 11%;
+    padding: 50px 1px;
+    text-decoration: none;
+    width: 50px;
+}
+.footerlogo{
+    width: 300px;
+    margin-left: -300px;
+    position: absolute;
+    padding: 10px 50px;
+}
+.Mesa{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.Magan{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    
+}
+.Manzano{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.Larga{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.Reyes{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.Muñoz{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.wrapper{
+    font-family: Lilita One;
+    background: #FFBD59;
+    width: 880px;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px (0, 0, 0, 0.5);
+    margin: 10px auto;
+}
+h2{
+    text-align: center;
+}
+.members{
+    display: flex;
+}
+.team-mem{
+    margin: 18px;
+   
+}
+.line{
+    width: 100px;
+    margin: 10px auto;
+}
+h4,p{
+    font-family: Lilita One;
+}

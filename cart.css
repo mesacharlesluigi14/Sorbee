@@ -1,0 +1,288 @@
+.navbar-custom {
+    background-color: #F9AAB4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+.navbar-brand img{
+    width: 120px;
+    margin-left: 25px;
+}
+.navbar-nav{
+ align-items: center;
+ 
+}
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 14px;
+    padding: 0.5em 2.5em;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+@media screen and(min-width: 992px){
+    .navbar-brand img{
+        width: 100px;
+    }
+    .navbar-brand{
+        margin-right: 0;
+    }
+}
+
+h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F9AAB4;
+    font-family: "Lilita One", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    padding: 0.5em 2.5em;
+}
+
+.backcart {
+    margin-left: 5%;
+    width: 1200px;
+    height: 500px;
+}
+
+.backproduct {
+    margin-top: 1%;
+    margin-left: 8px;
+    padding: 8%;
+    background-color: #FFD78A;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.innerproduct {
+    background-color: #FFEBC5;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.icecream {
+    width: 100px;
+    height: 100px;
+}
+
+.pro1 {
+    width: 150px;
+    height: 150px;
+}
+
+.price, .quantity, .total {
+    color: #fff;
+    font-size: 14px;
+    padding: 0.5em 2.5em;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+
+.quan {
+    color: #fff;
+    font-size: 14px;
+    padding: 0.5em 2.5em;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    width: 225px;
+    margin-top: 20px;
+}
+
+.tots, .amount {
+    color: #fff;
+    font-size: 25px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+
+.continue {
+    color: #fff;
+    font-size: 25px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    background-color: F9AAB4;
+    width: 265px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 12%;
+}
+
+.continue:hover {
+    color: #FFD78A;
+}
+
+.btn1 {
+    background: linear-gradient(#F9AAB4, #DD7086);
+    color: #fff;
+    font-size: 25px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    margin-inline-end: 34%;
+    box-shadow: inset 2px 2px 10px 5px rgba(0, 0.2, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.btn1:hover {
+    color: #c5886c;
+}
+
+.checkingout {
+    margin-left: 74%;
+}
+
+body {
+    background-color: #ffceda;
+}
+
+.tax {
+    color: #fff;
+    font-size: 12px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+
+.priceproduct, .totalproduct, .elemproduct {
+    padding-top: 20%;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+
+.quantityproduct {
+    padding-top: 15%;
+    padding-right: 35%;
+}
+
+.decrement{
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    background: linear-gradient(#E33535, #7D1D1D);
+    font-family: "Lilita One", sans-serif;
+
+}
+
+.increment {
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    background: linear-gradient(#42D96C, #257323);
+    font-family: "Lilita One", sans-serif;
+}
+
+.cart {
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+
+
+.foot{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 260px;
+    width: 100%;
+    background: linear-gradient(#DD7086, #F9AAB4, #DD7086);
+}
+
+.footerlogo {
+    margin-top: 17%;
+    width: 200px;
+    height: 85px;
+}
+
+.loc, .contact-link {
+    font-size: 16px;
+}
+
+.storelocs{
+    color: #fff;
+    font-size: 12px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    text-align: justify;
+}
+
+.footerLoc {
+    padding-top: 20%;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+
+.contactus {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+
+.fb {
+    margin-top: 1%;
+    position: absolute;
+    top: 130%;
+    right: 19%;
+    padding: 50px 1px;
+    text-decoration: none;
+    width: 50px;
+}
+
+.twt {
+    margin-top: 1%;
+    position: absolute;
+    top: 130%;
+    right: 23%;
+    padding: 50px 1px;
+    text-decoration: none;
+    width: 50px;
+}
+
+.inst {
+    margin-top: 1%;
+    position: absolute;
+    top: 130%;
+    right: 15%;
+    padding: 50px 1px;
+    text-decoration: none;
+    width: 50px;
+}
+
+.credit {
+    padding-top: 8px;
+    background: linear-gradient(#FFBD59, #FFD78A);
+    height: 40px;
+    width: 100%;
+    color: #000000;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+
+.btnremove {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}   
+
+.footer-credit {
+    padding-top: 8px;
+    background: linear-gradient(#FFBD59, #FFD78A);
+    height: 40px;
+    width: 100%;
+    color: #000000;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    text-align: center; /* Center the text horizontally */
+}

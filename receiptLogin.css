@@ -1,0 +1,135 @@
+.navbar-custom {
+    background-color: #F9AAB4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+.navbar-brand img{
+    width: 120px;
+    margin-left: 25px;
+}
+.navbar-nav{
+ align-items: center;
+ 
+}
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 14px;
+    padding: 0.5em 2.5em;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+@media screen and(min-width: 992px){
+    .navbar-brand img{
+        width: 100px;
+    }
+    .navbar-brand{
+        margin-right: 0;
+    }
+}
+
+h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F9AAB4;
+    font-family: "Lilita One", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    padding: 0.5em 2.5em;
+}
+
+.continue {
+    color: #c97d7d;
+    font-size: 25px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    background-color: F9AAB4;
+    width: 265px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 12%;
+}
+
+.continue:hover {
+    color: #FFD78A;
+}
+
+.btn1 {
+    background: linear-gradient(#F9AAB4, #DD7086);
+    color: #fff;
+    font-size: 25px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+    margin-inline-end: 15%;
+    box-shadow: inset 2px 2px 10px 5px rgba(0, 0.2, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.btn1:hover {
+    color: #FFD78A;
+}
+
+.summary {
+    background-color: #ffffff;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 750px;
+    width: 1000px;
+    font-weight: 400;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0.2, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.ordersum {
+    padding-top: 3%;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5); 
+}
+
+.orders {
+    padding-top: 3%;
+    color: #000000;
+    font-size: 16px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5); 
+}
+
+.receipt {
+    color: #c97d7d;
+    font-size: 16px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);   
+}
+.totals {
+    text-align: left;
+    color: #000000;
+}
+
+.prices {
+
+    text-align: right;
+    margin-right: 180px;
+}
+  
+body {
+    background-color:  #ffceda;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+
+.credit {
+    padding-top: 8px;
+    background: linear-gradient(#FFBD59, #FFD78A);
+    height: 40px;
+    width: 100%;
+    color: #000000;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}

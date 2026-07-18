@@ -1,0 +1,280 @@
+  .navbar-custom {
+    background-color: #F9AAB4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar-brand img{
+    width: 120px;
+    margin-left: 25px;
+  }
+
+  .navbar-nav{
+    align-items: center;
+  }
+
+  .navbar .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 14px;
+    padding: 0.5em 2.5em;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+  }
+
+  @media screen and(min-width: 992px){
+    .navbar-brand img{
+      width: 100px;
+    }
+    .navbar-brand{
+      margin-right: 0;
+    }
+  }
+
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .bg-yellow-100 {
+    background-color: #ffebc5;
+    width: 170px;
+    margin: 0 auto; 
+    text-align: center; 
+}
+  
+  .p-3 {
+    padding: 0.75rem;
+  }
+
+  .rounded-lg {
+    border-radius: 0.75rem;
+  }
+
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .mb-2 {
+    margin-bottom: 0.75rem; 
+  }
+
+  .font-bold {
+    font-weight: 700;
+  }
+
+  .mt-2 {
+    margin-top: 0.75rem; 
+  }
+
+  .cart-button {
+    background-color: transparent;
+    border: none;
+    margin-bottom: -19.5px;
+  }
+
+  .cart-icon {
+    width: 174px; 
+    height: 46px; 
+  }
+
+  .item-name {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1px; 
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+  }
+  
+  .item-price {
+    color: #FBE7EA;
+    font-size: 14px;
+    margin-top: -5px; 
+    margin-bottom: -10px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+  }
+  .currency {
+    color: #fff; 
+  }
+
+  .p-2 {
+    padding: 0.5rem; 
+  }
+
+  .rounded-full {
+    border-radius: 9px;
+  }
+
+  .w-150 {
+    width: 150px;
+  }
+
+  .h-150 {
+    height: 150px;
+  }
+
+  body {
+    background-color: #fbe7ea;
+  }
+
+  .modal-header {
+    border-bottom: none; 
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+
+  .modal-text {
+    color: #fff;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+  }
+  
+  .modal-title {
+    color: #F9AAB4; 
+    font-size: 30px;
+    text-align: center; 
+  }
+  
+  .modal-description {
+    color: #7f7f7f; 
+    font-size: 17px;
+  }
+  
+  .modal-price {
+    color: #fad8dd; 
+    text-align: right; 
+    font-size: 20px;
+    margin-top: 30px; 
+  }
+
+  .modal-box {
+    background-color: #ffffff; 
+    border-radius: 20px; 
+  }
+
+  .mod-add-to-cart {
+    background-color: transparent;
+    border: none;
+    margin-top: -25px;
+    margin-right: -5px;
+  }
+
+  .mod-cart-icon {
+    width: 174px;   
+    height: 46px; 
+  }
+  
+  .notification-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999; 
+  }
+  
+  .notification-text {
+    color: #F9AAB4; 
+    font-size: 18px; 
+    font-family: "Lilita One", sans-serif; 
+    margin-top: 10px;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.647);
+  }
+
+  .divider {
+    position: relative;
+    width: calc(100% + 311px); 
+    left: -200px; 
+    height: 50px;
+    text-align: center;
+    background-color: #ffffff; 
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+  }
+
+  .divider img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-27%, -50%);
+    max-width: 150%;
+    max-height: 150%; 
+    overflow: hidden;
+}
+
+.cone-divider {
+  background-image: url('pic/divider.png');
+  background-size: contain;
+  position: relative;
+  width: calc(100% + 222px);
+  left: -111px; 
+  height: 100px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  overflow: hidden; 
+}
+
+.cone-image {
+  background-image: url('pic/softbee.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50.25%; 
+  transform: translate(-50%, -50%); 
+  width: calc(100% + 195px); 
+  height: 93%; 
+}
+
+  .backframe {
+    margin-top: -4.5%;
+    margin-bottom: 3%;
+    padding: 7.3%;
+    background-color: #dde7c8;
+    width: 170px;
+    height: 170px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.innerframe {
+    background-color: #ffffff;
+    width: 145px;
+    height: 145px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+  .itemframe {
+    width: 145px;
+    height: 145px;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 52%;
+}

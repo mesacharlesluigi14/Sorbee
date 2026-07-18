@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.navbar-custom {
+  background-color: #F9AAB4;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+  width: 120px;
+  margin-left: 25px;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-link i {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 14px;
+  padding: 0.3em 2.5em;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  text-shadow: 0px 2px 2px rgba(75, 74, 74, 0.5);
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+  }
+  
+  th {
+    background-color: #F9AAB4;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Lilita One", sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    padding: 15px -15px;
+  }
+  
+  /* Rest of the CSS code remains the same */
+
+tr:nth-child(even) {
+  background-color: #fff6f6;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffe1e1;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Additional Styles */
+
+table {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+td:last-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body {
+  background-color: #ffbb00;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+th,
+td {
+  transition: background-color 0.3s ease;
+}
+
+th:hover,
+td:hover {
+  background-color: #f9c7d0; /* Lighter pink on hover */
+}
+
+th::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 3px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+th:hover::after {
+  opacity: 1;
+}
+
+
+
+td:hover::before {
+  opacity: 1;
+}
