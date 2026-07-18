@@ -5,12 +5,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $totalAmount = $_POST['total_amount'];
     $userName = $_POST['user_name'];
     
-    $servername = 'localhost';
-    $username = 'root';
-    $password = '';
-    $database = 'sorbeedb';
+    $servername = getenv('MYSQLHOST') ?: 'localhost';
+    $username = getenv('MYSQLUSER') ?: 'root';
+    $password = getenv('MYSQLPASSWORD') ?: '';
+    $database = getenv('MYSQLDATABASE') ?: 'sorbeedb';
+    $port = getenv('MYSQLPORT') ?: 3306;
 
-    $conn = new mysqli($servername, $username, $password, $database);
+    $conn = new mysqli($servername, $username, $password, $database, $port);
 
     if ($conn->connect_error) {
         die('Connection failed: ' . $conn->connect_error);

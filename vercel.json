@@ -1,0 +1,14 @@
+{
+  "builds": [
+    { "src": "*.php", "use": "vercel-php@0.7.2" },
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.css", "use": "@vercel/static" },
+    { "src": "*.js", "use": "@vercel/static" },
+    { "src": "pic/**", "use": "@vercel/static" },
+    { "src": "media/**", "use": "@vercel/static" },
+    { "src": "fonts/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/homeGuest.html" }
+  ]
+}
