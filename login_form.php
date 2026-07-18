@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <a class="navbar-brand d-none d-lg-block" href="#">
-            <img src="" alt="">
+            <img src="pic/logo.png" alt="Sorbee logo">
           </a>
         </ul>
       </div>
@@ -89,7 +89,6 @@ if(isset($_POST['submit'])){
   </form>
 </div>
 
-</div>
     <footer>
       <img src="pic/logo.png" alt="Logo" class="footer-logo">
       <div class="footer-container">

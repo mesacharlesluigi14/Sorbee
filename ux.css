@@ -1,10 +1,12 @@
+@import url('layout.css');
+
 .navbar-custom {
     background-color: #F9AAB4;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), inset 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .navbar-brand img{
     width: 120px;
-    margin-left: 25px;
+    margin-left: 0;
 }
 .navbar-nav{
  align-items: center;
@@ -126,7 +128,8 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 650px;
-    width: 1265px;
+    width: 100%;
+    max-width: 1265px;
     position: relative;
     z-index: 1;
     margin-top: -10px;
@@ -247,7 +250,8 @@
     background-repeat: no-repeat;
     position: relative;
     height: 200px;
-    width: 1265px;
+    width: 100%;
+    max-width: 1265px;
     margin: 0 auto; 
     margin-top: -20px;
     margin-bottom: -20px;
@@ -316,20 +320,27 @@
 
 /* Styles for the footer */
 footer {
-  height: 350px;
+  min-height: 350px;
+  height: auto;
+  padding: 40px 20px 30px;
   background: linear-gradient(to bottom, #F9AAB4, #DD7086);
   position: relative;
-  left: 0;
-  bottom: 0;
-  width: 1265px;
-  margin: 0 auto; /* Add this line */
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  padding: 20px;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  max-width: 1265px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-column {
@@ -337,23 +348,22 @@ footer {
 }
 
 .store-locations {
-  margin-left: 250px;
-  margin-top: 20px;
+  margin: 0;
+  flex: 1 1 55%;
 }
 
 .contact-info {
-  margin-top: -115px;
-  margin-right: 60px;
+  margin: 0;
+  flex: 0 0 auto;
 }
 
 .footer-logo {
   width: 160px;
-  height: 70px;
+  height: auto;
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%);
+  position: static;
+  transform: none;
+  margin: 0 auto 24px;
 }
 
 .location-list,
@@ -428,49 +438,26 @@ h3::after {
   margin-top: 20px;
 }
 
-@media (max-width: 1255px) {
-  .store-locations {
-    margin-left: 150px;
-  }
-
-  .contact-info {
-    margin-right: 30px;
-  }
-}
-
 @media (max-width: 992px) {
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
+    gap: 24px;
   }
 
-  .store-locations {
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
+  .store-locations,
   .contact-info {
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
+    width: 100%;
   }
 }
 
-@media (max-width: 768px) {
-  .footer-logo {
-    position: static;
-    margin-bottom: 20px;
-  }
-}
 section {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
   width: 100%;
-  max-width: 1265px;
-  margin: 0 auto;
+  margin: 0;
   background: linear-gradient(to right, #FFBD59, #FFD78A);
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -555,16 +542,16 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 70vh;
-  width: 1265px;
+  width: 100%;
   padding: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pic/lgbg.gif") center/contain no-repeat;
-  background-position: center center;
-  background-size: 70vh,  1265px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pic/lgbg.gif") center/cover no-repeat;
   position: relative;
 }
 .form-container form {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 400px;
+  height: auto;
   padding: 20px;
   background: linear-gradient(90deg, #ff9ba8, #fcc7ce);
   border-radius: 5px;
@@ -613,7 +600,7 @@ section {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  width: 350px;
+  width: 100%;
   height: 55px;
   margin-top: 10px;
 }
@@ -655,13 +642,16 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 80vh;
+  width: 100%;
   padding: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pic/lgbg.gif") center/cover no-repeat;
 }
 
 .reg-form form {
-  width: 400px;
-  height: 625px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 625px;
+  height: auto;
   padding: 20px;
   background: linear-gradient(90deg, #ff9ba8, #fcc7ce);
   border-radius: 5px;
@@ -712,7 +702,7 @@ section {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  width: 350px;
+  width: 100%;
   height: 55px;
   margin-top: 5px;
 }
@@ -732,7 +722,7 @@ section {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  width: 350px;
+  width: 100%;
   height: 35px;
   margin-top: 0px;
 }
@@ -752,7 +742,7 @@ section {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  width: 350px;
+  width: 100%;
   height: 35px;
   margin-top: 0px;
 }
