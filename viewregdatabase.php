@@ -1,12 +1,12 @@
 <?php
     @include 'config.php';
     session_start();
+
+    if($db_available) {
+        $sql = "SELECT * FROM user_form";
+        $result = mysqli_query($conn, $sql);
+    }
 ?>
-
-<!doctype html>
-<html lang="en">
-
-<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Account Database: View</title>
@@ -47,11 +47,11 @@
     </div>
 </nav>
 
-<?php
-    $sql = "SELECT * FROM user_form";
-    $result = mysqli_query($conn, $sql);
-?>
-
+<?php if(!$db_available): ?>
+<div style="text-align:center;padding:40px;color:#FF5C8D;font-family:'Lilita One',sans-serif;font-size:18px;">
+    ⚠️ Database unavailable — this is a portfolio demo. Connect a MySQL database to enable full functionality.
+</div>
+<?php else: ?>
 <table>
     <thead>
         <tr>
@@ -75,6 +75,7 @@
         <?php endwhile; ?>
     </tbody>
 </table>
+<?php endif; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

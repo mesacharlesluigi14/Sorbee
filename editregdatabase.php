@@ -2,24 +2,24 @@
     @include 'config.php';
     session_start();
 
-    if (isset($_GET['delete_id'])) {
-        $id = $_GET['delete_id'];
+    if($db_available) {
+        if (isset($_GET['delete_id'])) {
+            $id = $_GET['delete_id'];
+            $deleteQuery = "DELETE FROM user_form WHERE id = '$id'";
+            mysqli_query($conn, $deleteQuery);
+        }
 
-        $deleteQuery = "DELETE FROM user_form WHERE id = '$id'";
-        mysqli_query($conn, $deleteQuery);
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $id = $_POST['edit_id'];
+            $name = $_POST['edit_name'];
+            $email = $_POST['edit_email'];
+            $updateQuery = "UPDATE user_form SET name = '$name', email = '$email' WHERE id = '$id'";
+            mysqli_query($conn, $updateQuery);
+        }
+
+        $sql = "SELECT * FROM user_form";
+        $result = mysqli_query($conn, $sql);
     }
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $id = $_POST['edit_id'];
-        $name = $_POST['edit_name'];
-        $email = $_POST['edit_email'];
-
-        $updateQuery = "UPDATE user_form SET name = '$name', email = '$email' WHERE id = '$id'";
-        mysqli_query($conn, $updateQuery);
-    }
-
-    $sql = "SELECT * FROM user_form";
-    $result = mysqli_query($conn, $sql);
 ?>
 
 <!doctype html>
@@ -85,11 +85,11 @@
     </div>
 </div>
 
-<?php
-    $sql = "SELECT * FROM user_form";
-    $result = mysqli_query($conn, $sql);
-?>
-
+<?php if(!$db_available): ?>
+<div style="text-align:center;padding:40px;color:#FF5C8D;font-family:'Lilita One',sans-serif;font-size:18px;">
+    ⚠️ Database unavailable — this is a portfolio demo. Connect a MySQL database to enable full functionality.
+</div>
+<?php else: ?>
 <table>
     <thead>
         <tr>
@@ -118,6 +118,7 @@
     <?php endwhile; ?>
     </tbody>
 </table>
+<?php endif; ?>
 
 <!-- Edit Modal -->
 <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">

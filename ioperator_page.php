@@ -2,16 +2,16 @@
     @include 'config.php';
     session_start();
 
-    if (isset($_GET['delete_id'])) {
-        $id = $_GET['delete_id'];
+    if($db_available) {
+        if (isset($_GET['delete_id'])) {
+            $id = $_GET['delete_id'];
+            $deleteQuery = "DELETE FROM purchase_form WHERE purchase_id = '$id'";
+            mysqli_query($conn, $deleteQuery);
+        }
 
-        $deleteQuery = "DELETE FROM purchase_form WHERE purchase_id = '$id'";
-        mysqli_query($conn, $deleteQuery);
+        $sql = "SELECT * FROM user_form";
+        $result = mysqli_query($conn, $sql);
     }
-
-
-    $sql = "SELECT * FROM user_form";
-    $result = mysqli_query($conn, $sql);
 ?>
 
 <!doctype html>
